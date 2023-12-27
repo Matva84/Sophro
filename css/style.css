@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Poppins:wght@500&display=swap');
+
+body {
+  background-color: white;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 48px;
+  height: 90px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #E7E7E7;
+  background: #FFF;
+  position: sticky;
+  top: 0;
+}
+
+.text_banner {
+  color: #1E1E1E;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+.text_banner:hover {
+  text-decoration: underline;
+}
+
+.text_banner:active {
+  color: #DAA520;
+}
+
+.text_banner_yellow {
+  color: white;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 16px 0px;
+  background: var(--Gold, #DAA520);
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.text_banner_yellow:hover {
+  background: #cf9502;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.container {
+  padding: 3% 3%;
+}
+
+.hero {
+  display: inline-flex;
+  padding: 80px 110px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 100px;
+  border: 0px solid black;
+}
+
+.hero_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  border: 0px solid black;
+}
+
+.hero_left img {
+  width: 75%;
+  margin-top: 0px;
+}
+
+.hero_right {
+  height: cover;
+  border-radius: 80px 0px;
+  border: 0px solid black;
+}
+
+.avocates {
+  background: #232323;
+  display: flex;
+  margin: 0px 110px;
+  padding-bottom: 88px;
+  padding-top: 88px;
+  padding-left: 88px;
+  padding-right: 88px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  align-self: stretch;
+  gap: 68px;
+  border: 0px solid white;
+}
+
+.card img {
+  height: auto;
+}
+
+.desc_avocate {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 0px solid white;
+}
+
+.desc_name {
+  border: 0px solid white;
+}
+
+.education {
+  border: 0px solid white;
+}
+
+.experience {
+  border: 0px solid white;
+}
+
+.competences {
+  background: white;
+  display: flex;
+  color: black;
+  margin: 0px 0px;
+  padding-bottom: 88px;
+  padding-top: 88px;
+  padding-left: 88px;
+  padding-right: 88px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+p {
+  color: var(--Deep-Dark, #1E1E1E);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+h1 {
+  color: #1E1E1E;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+}
+
+h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+#h3_black {
+  color: black;
+  align-self: flex-start;
+}
+
+h4 {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+h5 {
+  align-self: stretch;
+  color: var(--Gold, #DAA520);
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+h6 {
+  align-self: stretch;
+  color: #8B949C;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+#h6_black {
+  color: black;
+  align-self: flex-start;
+}
+
+h7 {
+  align-self: stretch;
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
