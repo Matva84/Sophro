@@ -1,0 +1,92 @@
+.competence_card_number {
+  color: var(--Gold, #DAA520);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.competence_card_title {
+  align-self: stretch;
+  color: var(--Deep-Dark, #1E1E1E);
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.competence_card_text {
+  align-self: stretch;
+  color: var(--Deep-Dark, #1E1E1E);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.cards_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 0px solid black;
+}
+
+.competence_card {
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 0px solid black;
+  gap: 16px;
+  padding-top: 51px;
+  padding-bottom: 51px;
+  padding-right: calc(0.515*100%/5);
+}
+
+.hono_card {
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: calc(3.25*1.33*100%/5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  margin: 0px 0px;
+  padding: 0px;
+  border: 0px solid black;
+}
+
+.footer_card_left {
+  height: auto;
+  width: 775px;
+  border: 0px solid white;
+  padding-top: 12px;
+}
+
+.footer_card_right {
+  height: auto;
+  width: 250px;
+  border: 0px solid white;
+  padding-left: 40px;
+}
+
+.footer_card_middle {
+  height: auto;
+  width: 100px;
+  border: 0px solid white;
+}
+
+.footer_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+  flex-grow: 1;
+}
