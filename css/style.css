@@ -4,122 +4,49 @@
 
 :root {
   --animation-timing: 1s;
-  --orange:  #DAA520;
   --light: hsl(16, 99%, 99%);
   --dark: hsl(16, 99%, 1%);
-  scroll-behavior: smooth;
-}
-
+  --darkgreen: #1A392E;
+  --lightgreen: #E3E8E6;
+  scroll-behavior: smooth;}
 html {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
-  background: transparent;
-}
-
+  background: transparent;}
 body {
   margin: 0;
   padding: 0;
   /*background-color: white;*/
   overflow-x: hidden;
-  overscroll-behavior-x: none;
-}
+  overscroll-behavior-x: none;}
+.darkgreen {
+  background-color: var(--darkgreen);
+  margin: 0;
+  padding: 0;}
+.lightgreen {
+  background-color: var(--lightgreen);
+  margin: 0;
+  padding: 0;}
+.white {
+  background-color: var(--light);
+  margin: 0;
+  padding: 0;}
+.dark {
+  background-color: var(--dark);
+  margin: 0;
+  padding: 0;}
+.vh {
+  height: 100vh;
+  border-top: 0px solid var(--light);
+  margin: 0;
+  padding: 0;}
 
-.ancres {scroll-margin-top: 150px;}
-.ancres_competences {scroll-margin-top: 80px;}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-
-.menu .item {
-  margin-left: 1rem;
-}
-
-.menu .link {
-  color: #1E1E1E;
-  font-family: "DM Sans";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 16px 16px;
-  text-decoration: none;
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu .link::after {
-  content: "";
-
-  display: block;
-  height: 0.1rem;
-  background: var(--orange);
-
-  transform: scale(0);
-  transition: transform var(--animation-timing);
-}
-
-.menu .link:hover::after {
-  transform: scale(1);
-  transform-origin: center;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  90% {
-    opacity: 0.6;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-nav {
-  position: sticky;
-  top: 0;
-}
-
-.banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 48px;
-  height: 90px;
-  flex-shrink: 0;
-  border-bottom: 1px solid #E7E7E7;
-  background: #FFF;
-}
-
-.text_banner {
-  color: #1E1E1E;
-  font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 0 16px;
-  text-decoration: none;
-}
-
-.text_banner:hover {
-  text-decoration: underline;
-}
-
-.text_banner:active {
-  color: #DAA520;
-}
-
+/*MENU ET NAVBAR*/
 .text_banner_yellow {
   color: white;
-  font-family: 'DM Sans;
+  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -130,12 +57,109 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  text-decoration: none;}
+.text_banner_yellow:hover {
+  background: #cf9502;}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;}
+.menu .item {
+  margin-left: 1rem;}
+.menu .link {
+  color: var(--light);
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 16px;
   text-decoration: none;
+  display: block;
+  justify-content: center;
+  align-items: center;}
+.menu .link::after {
+  content: "";
+
+  display: block;
+  height: 0.1rem;
+  background: var(--orange);
+
+  transform: scale(0);
+  transition: transform var(--animation-timing);}
+.menu .link:hover::after {
+  transform: scale(1);
+  transform-origin: center;}
+.topnav_link {
+  color: var(--light);
+  padding: 12px;
+  text-decoration: none;}
+nav {
+  background-color: var(--darkgreen);
+  position: sticky;
+  top: 0;}
+.topnav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;}
+#topnav_hamburger_icon {
+  display: none;}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 48px;
+  height: 90px;
+  flex-shrink: 0;
+  border-bottom: 0px solid var(--light);
+  background: var(--darkgreen);}
+.text_banner {
+  color: #1E1E1E;
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 16px;
+  text-decoration: none;}
+.text_banner:hover {
+  text-decoration: underline;}
+.text_banner:active {
+  color: #DAA520;}
+
+/*POLICES*/
+h1 {
+  color: #1E1E1E;
+  font-family: 'DM Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+  padding:0;}
+
+
+.avatar {
+  border-radius: 50%;}
+
+
+
+
+/*
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.text_banner_yellow:hover {
-  background: #cf9502;
-}
+.ancres {scroll-margin-top: 150px;}
+.ancres_competences {scroll-margin-top: 80px;}
 
 .logo {
   display: flex;
@@ -209,7 +233,7 @@ nav {
   border-radius: 80px 0px;
   border: 0px solid black;
   width: 1255px;
-  /*width: calc(1.5*100%/5);*/
+  /*width: calc(1.5*100%/5);
   height: 700px;
 }
 
@@ -306,14 +330,7 @@ p {
   line-height: 170%;
 }
 
-h1 {
-  color: #1E1E1E;
-  font-family: 'DM Sans';
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 36px */
-}
+
 
 h3 {
   color: #FFF;
@@ -403,7 +420,7 @@ h8 {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 32px */
+  line-height: 100%;
 }
 
 .bkg_black_left_aligned {
@@ -432,7 +449,7 @@ h8 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 40px;*/
+  gap: 40px;
   flex-shrink: 0;
   width: auto;
   height: 300px;
@@ -478,7 +495,7 @@ a {
   height: 350px;
   /*position: relative;
   top: 45px;
-  left: 20px;*/
+  left: 20px;
   border-radius: 80px 0px 0px 0px;
   border: 0px solid grey;
   padding: 40px 60px;
@@ -564,24 +581,6 @@ label, #toggle {
   display: none;
 }
 
-/* ******************** NAV BAR ******************** */
-.topnav {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.topnav_link {
-  color: black;
-  padding: 12px;
-  text-decoration: none;
-}
-
-#topnav_hamburger_icon {
-  display: none;
-}
-
 @media (max-width: 1800px) {
   .hero_right {width: 1285px;}
 }
@@ -608,7 +607,7 @@ label, #toggle {
 }
 @media (max-width: 1000px) {
   .hero_right {width: 1380px;}
-}
+}*/
 @media (max-width: 900px) {
 
   .close {
@@ -1103,3 +1102,4 @@ label, #toggle {
     background-position: right -100px top 300px;
   }
 }
+*/
