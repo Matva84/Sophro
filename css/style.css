@@ -40,18 +40,12 @@ body {
   background-color: var(--dark);
   margin: 0;
   padding: 0;}
-.vh70 {
-  height: 70vh;}
-.vh100 {
-    height: 100vh;}
-.txtWhite {
-  color: var(--light);}
-.txtBlack {
-    color: var(--dark);}
-.zeropadding {
-  padding: 0;}
-.zeromargin {
-  margin: 0;}
+.vh70 {height: 70vh;}
+.vh100 {height: 100vh;}
+.txtWhite {color: var(--light);}
+.txtBlack {color: var(--dark);}
+.zeropadding {padding: 0;}
+.zeromargin {margin: 0;}
 
 /*MENU ET NAVBAR*/
 .text_banner_yellow {
@@ -183,6 +177,16 @@ h6 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;}
+h7 {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--Gold, #DAA520);}
+
 .txtCenter {
   display: flex;
   width: 100%;
@@ -221,25 +225,44 @@ a {
 
 .avatar {
   border-radius: 50%;}
+.icone {
+  width: 54px;
+  height: 54px;
+  padding-top: 24px;}
 
-  #quote{
+#quote{
     font-size:44px;
     line-height:50px;
-    color:#dedede;
-  }
+    color:#dedede;}
+.imgLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+padding-top: 100px;}
+.txtRight {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 80px;}
 
 /*CARDS*/
 .containerCards1 {
     display: flex;
-    gap: 100px;
+    gap: 24px;
     align-items: center;
     justify-content: center;
     z-index: 0;
     /*margin-top: 100vh; /* This is to ensure you scroll down to see the effect */}
 .containerCards2 {
   display: flex;
-  justify-content: space-around;
+  gap: 32px;
   z-index: 0;
+  align-items: center;
+  justify-content: center;
   /*margin-top: 100vh; /* This is to ensure you scroll down to see the effect */}
 .containerCards3 {
   display: flex;
@@ -247,8 +270,6 @@ a {
   z-index: 0;
   /*margin-top: 100vh; /* This is to ensure you scroll down to see the effect */}
 .cards {
-    width: 250px;
-    height: 250px;
     background-color: var(--light);
     display: flex;
     flex-direction: column;
@@ -258,6 +279,24 @@ a {
     border-radius: 8px;
     opacity: 0;
     z-index: 0;}
+.cardsOffre2 {
+      background-color: var(--light);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      border-radius: 8px;
+      opacity: 0;
+      z-index: 0;
+      gap: 32px;
+      padding:32px 40px;}
+.cardsize250250 {
+    width: 250px;
+    height: 250px;}
+.cardsize375400 {
+      width: 15%;
+      height: 250px;}
 .card-left {
     transform: translateX(-100vw);}
 .card-middle {
@@ -327,11 +366,9 @@ a {
   align-items: center;
   justify-content: center;}
 
-.pt100 {
-  padding-top: 100px;}
-.pb100 {
-  padding-bottom: 100px;}
-
+.pt100 {padding-top: 100px;}
+.pb100 {padding-bottom: 100px;}
+.w250 {width: 250px;}
 
 
 
